@@ -23,9 +23,7 @@ This Techology is a CMS style project utilising the MVC structure, routes, SQL a
 AS A developer who writes about tech
 I WANT a CMS-style blog site
 SO THAT I can publish articles, blog posts, and my thoughts and opinions
-Link to the deployed application can be tested here on Heroku: Techology and the project repository can be viewed here: Techology
-Credits
-
+Link to the deployed application can be tested here on Heroku: https://techology.herokuapp.com/ and the project repository can be viewed here: https://techology.herokuapp.com/
 
 
 ## Installation
