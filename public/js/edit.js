@@ -17,7 +17,7 @@ const editFormHandler = async function(event) {
     }
   });
 
-  document.location.replace('/dashboard');
+  document.location.replace('./dashbord.handlebars');
 };
 
 const deleteClickHandler = async function() {

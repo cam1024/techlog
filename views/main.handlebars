@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>The Tech Blog</title>
+  <link href="https://fonts.googleapis.com/css?family=IBM+Plex+Sans:400,400i,700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/public/css/style.css">
+</head>
+
+<body class="flex-column min-100-vh">
+  <nav class="navbar">
+    <ul>
+      <li class="li-inline nav-item"><a href="/">Home</a></li>
+      <li class="li-inline nav-item"><a href="dashboard.handlebars">Dashboard</a></li>
+      <li class="li-inline nav-item"><a href="#" id="logout-link">Logout</a></li>
+    </ul>
+  </nav>
+  <header class="hero">
+    <h1 class="app-title"><a href="/">The Tech Blog</a></h1>
+
+  <!-- The Modal "Close" -->
+<div id="id01" class="modal">
+  <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">&times;</span>
+
+  <!-- Modal Content -->
+  <form class="modal-content animate">
+    <div class="imgcontainer">
+      <img src="/image/profile.png" alt="Avatar" class="avatar">
+    </div>
+
+    <div class="container">
+      <label for="uname"><b>Username or email</b></label>
+      <input type="text" placeholder="Enter Username or email" id="user-login" name="uname" required>
+
+      <label for="password"><b>Password</b></label>
+      <input type="password" placeholder="Enter Password" id="password-login" name="password" required>
+
+      <button type="submit" id="modal" class="modal-button" formaction="/profile"><a href="/profile"></a> Login</button>
+      <label>
+        <input type="checkbox" checked="checked" name="remember"> Remember me
+      </label>
+    </div>
+
+    <div class="container" style="background-color:#f1f1f1">
+      <button type="button" onclick="document.getElementById('id01').style.display='none'"
+        class="cancelbtn modal-button">Cancel</button>
+      <span class="password"></span> <a href="#">Forgot password?</a></span>
+    </div>
+  </form>
+</div>
+  </header>
+
+  <main class="col-auto">
+    {{{body}}}
+  </main>
+
+  <footer class="flex-row justify-center">
+    &copy; The Tech Blog Folx
+  </footer>
+</body>
+
+</html>
+<script src="/public/js/logout.js"></script>
+<a href="https://www.flaticon.com/free-icons/profile" title="profile icons">Profile icons created by Freepik - Flaticon</a>
